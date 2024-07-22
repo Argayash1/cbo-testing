@@ -8,9 +8,8 @@ export const Header = () => {
 
   return (
     <header className={styles.root}>
-      <p className={styles.screenWidth}>{screenWidth}</p>
-
       <div className={styles.container}>
+        <p className={styles.screenWidth}>{screenWidth}</p>
         <Logo />
         <TopMenu />
         <a href='tel:8 800 700 1996' className={styles.phone}>

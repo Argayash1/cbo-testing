@@ -4,10 +4,11 @@
 .root {
   width: 100%;
   background-color: #ffffff;
-  position: relative;
 }
 
 .container {
+  position: relative;
+
   @include section-flex-container(0, 120, 0);
 
   display: flex;
@@ -63,9 +64,11 @@
 
 .screenWidth {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   font-size: 20px;
   border: 1px solid red;
   color: red;
+  margin: 0;
+  padding: 0;
 }
