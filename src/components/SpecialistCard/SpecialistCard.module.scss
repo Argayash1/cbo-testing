@@ -1,0 +1,120 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	background-color: #fff;
+	grid-row: 1/6;
+	grid-column: 2/3;
+	width: 315px;
+	font-size: 0;
+
+	@media screen and (max-width: 986px) {
+		width: min(100%, 295px);
+		margin-top: 10px;
+		justify-self: flex-end;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 100%;
+		margin-top: 11px;
+	}
+}
+
+.photo {
+	width: 100%;
+	height: 315px;
+	object-fit: contain;
+	object-position: 9px -7px;
+	display: block;
+
+	@media screen and (max-width: 986px) {
+		width: 192px;
+		margin: 0 auto;
+		height: 192px;
+		object-position: -1px -4px;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 214px;
+		height: 214px;
+		object-position: -1px 10px;
+	}
+}
+
+.name {
+	@include main-text-font(20, 600, 1.6, #2b3541);
+	margin: 0 0 4px 20px;
+	padding: 0;
+	text-align: center;
+	max-width: 295px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 18px;
+		line-height: 1.77;
+		margin-left: 0;
+		margin-bottom: 4px;
+		margin-top: 3px;
+	}
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
+		margin-top: 21px;
+	}
+}
+
+.job {
+	@include main-text-font(16, 400, 1.5, #80899e);
+
+	margin: 0 0 0 20px;
+	padding: 0;
+	text-align: center;
+	max-width: 295px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 14px;
+		line-height: 1.28;
+		margin-left: 0;
+		margin-inline: auto;
+		max-width: 180px;
+	}
+}
+
+.phone {
+	@include main-text-font(16, 600, 1.5, #2b3541);
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin: 16px 0 8px 20px;
+	max-width: 295px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 14px;
+		line-height: 1.71;
+		margin-top: 25px;
+		margin-bottom: 8px;
+		margin-left: 0;
+	}
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
+		margin-top: 24px;
+		margin-bottom: 8px;
+	}
+}
+
+.email {
+	@include main-text-font(16, 600, 1.5, #0c999c);
+	display: block;
+	text-align: center;
+	max-width: 295px;
+	margin-left: 20px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 14px;
+		line-height: 1.71;
+		margin-left: 0;
+	}
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
+	}
+}

@@ -1,0 +1,61 @@
+@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.container {
+	@include section-flex-container(0, 120, 0);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 1360px) {
+		padding-right: 70px;
+		padding-left: 70px;
+	}
+
+	@media screen and (max-width: 1243px) {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	@media screen and (max-width: 1006px) {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	@media screen and (max-width: 560px) {
+		padding-right: 20px;
+		padding-left: 20px;
+		min-height: 50px;
+	}
+}
+
+.mainMenuContainer {
+	display: flex;
+	align-items: center;
+	min-height: 64px;
+	background-color: #045c5e;
+
+	@media screen and (max-width: 1195px) {
+		display: none;
+	}
+}
+
+.phone {
+	@include main-text-font(16, 600, 1.5, #005958);
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+
+	&:hover {
+		color: #0c999c;
+	}
+
+	@media screen and (max-width: 884px) {
+		display: none;
+	}
+}

@@ -1,0 +1,104 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	margin: 39px 0 50px;
+	position: relative;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 29px;
+		margin-bottom: 40px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 27px;
+		margin-bottom: 30px;
+	}
+}
+
+.rootTypeAboutPracticum {
+	margin-top: 38px;
+	margin-bottom: 0;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 31px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 20px;
+	}
+}
+
+.wrapper {
+	max-width: 100%;
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+	height: 401px;
+
+	@media screen and (max-width: 986px) {
+		height: 284px;
+	}
+
+	@media screen and (max-width: 531px) {
+		height: 295px;
+	}
+}
+
+.wrapperTypeAboutPracticum {
+	height: auto;
+}
+
+.buttonList {
+	margin: 40px auto 0;
+	padding: 0 110px 0 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 2px;
+		margin-top: 40px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 20px;
+		padding-right: 1px;
+	}
+}
+
+.slideNumber {
+	@include main-text-font(20, 400, 1.7, #0c999c);
+	margin-right: 10px;
+
+	@media screen and (max-width: 531px) {
+		margin-right: 5px;
+		font-size: 16px;
+		color: #e32121;
+		display: inline-block;
+		width: 10px;
+	}
+}
+
+.counterSlash {
+	@include main-text-font(20, 400, 1.7, #667085);
+
+	@media screen and (max-width: 531px) {
+		font-size: 16px;
+		display: inline-block;
+		width: 8px;
+	}
+}
+
+.slideCount {
+	@include main-text-font(20, 400, 1.7, #667085);
+	margin-left: 10px;
+
+	@media screen and (max-width: 531px) {
+		margin-left: 5px;
+		font-size: 16px;
+		display: inline-block;
+		width: 12px;
+	}
+}

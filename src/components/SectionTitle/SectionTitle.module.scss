@@ -1,0 +1,167 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	@include main-text-font(42, 600, 1.35, #2b3541);
+	letter-spacing: -0.84px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	min-height: 57px;
+
+	@media screen and (max-width: 1233px) {
+		&:not(
+				.rootPlaceQuestions,
+				.rootPlaceAboutAuthor,
+				.rootPlacePracticeActivities,
+				.rootPlaceAboutPracticum,
+				.rootPlaceFaq,
+				.rootPlaceFeedback
+			) {
+			max-width: 806px;
+			margin-inline: auto;
+		}
+	}
+
+	@media screen and (max-width: 986px) {
+		font-size: 35px;
+		line-height: 1.42;
+		letter-spacing: -0.7px;
+		max-width: 561px;
+		min-height: 50px;
+	}
+
+	@media screen and (max-width: 571px) {
+		&:not(
+				.rootPlaceTargetAudience,
+				.rootPlacePracticeActivities,
+				.rootPlaceAboutPracticum,
+				.rootPlaceFaq,
+				.rootPlaceFeedback
+			) {
+			max-width: 355px;
+		}
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 25px;
+		line-height: 1.28;
+		letter-spacing: -0.5px;
+		max-width: 253px;
+		min-height: 32px;
+	}
+}
+
+.rootPlaceQuestions {
+	color: #0c5b5d;
+
+	@media screen and (max-width: 1233px) {
+		margin-inline: auto;
+		padding-right: 5px;
+	}
+}
+
+.rootPlaceTargetAudience {
+	color: #fff;
+
+	@media screen and (max-width: 531px) {
+		max-width: none;
+	}
+}
+
+.rootPlacePracticeActivities {
+	max-width: 827px;
+	margin-inline: auto;
+	text-align: center;
+	padding-right: 11px;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 7px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-right: 0;
+		text-align: left;
+		max-width: 220px;
+	}
+}
+
+.rootPlaceHowWillItGo {
+	max-width: 872px;
+	margin-inline: auto;
+	margin-top: 5px;
+	padding-right: 18px;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 0;
+		margin-top: 0;
+	}
+}
+
+.rootTypeTextAlignLeft {
+	text-align: left;
+}
+
+.rootPlaceAboutAuthor {
+	height: 57px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 6px;
+		margin-bottom: 24px;
+		height: auto;
+		position: relative;
+		z-index: 1;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
+}
+
+.rootPlaceAboutPracticum {
+	max-width: 557px;
+	margin-inline: auto;
+	padding-right: 102px;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 17px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-right: 7px;
+	}
+}
+
+.rootPlaceFaq {
+	max-width: 344px;
+	margin-inline: auto;
+	padding-right: 11px;
+
+	@media screen and (max-width: 986px) {
+		padding-right: 9px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-right: 7px;
+	}
+}
+
+.rootPlaceFeedback {
+	margin-top: 5px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 28px;
+		line-height: 1.39;
+		max-width: 273px;
+		letter-spacing: -0.56px;
+		margin-top: 0;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 25px;
+		line-height: 1.28;
+		letter-spacing: -0.5px;
+		margin-inline: auto;
+		text-align: center;
+	}
+}

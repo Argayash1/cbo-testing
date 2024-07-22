@@ -1,0 +1,71 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	max-width: 380px;
+	font-size: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	@media screen and (max-width: 986px) {
+		width: 100%;
+		gap: 20px;
+	}
+
+	@media screen and (max-width: 531px) {
+		max-width: 336px;
+		margin: 0 auto;
+	}
+}
+
+.image {
+	width: 56px;
+	height: 56px;
+	background-color: #0c999c;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	border-radius: 50%;
+	align-self: center;
+
+	@media screen and (max-width: 986px) {
+		width: 50px;
+		height: 50px;
+		margin-left: 3px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-left: 0;
+	}
+}
+
+.imageTypeThird {
+	width: 60px;
+	height: 60px;
+
+	@media screen and (max-width: 986px) {
+		width: 50px;
+		height: 50px;
+		margin-left: 0;
+		margin-right: 2px;
+	}
+}
+
+.title {
+	@include main-text-font(20, 500, 1.5, #2b3541);
+
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	@media screen and (max-width: 986px) {
+		font-size: 16px;
+		line-height: 1.43;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 18px;
+		line-height: 1.38;
+		min-height: 50px;
+		letter-spacing: -0.36px;
+	}
+}

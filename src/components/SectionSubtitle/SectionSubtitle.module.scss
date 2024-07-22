@@ -1,0 +1,103 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	@include main-text-font(24, 500, 1.45, #667085);
+	text-align: center;
+	letter-spacing: -0.48px;
+	margin: 20px 0 0;
+	padding: 0;
+	min-height: 35px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 18px;
+		line-height: 1.44;
+		letter-spacing: normal;
+		min-height: 26px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 16px;
+		line-height: 1.43;
+		letter-spacing: -0.32px;
+		margin-top: 15px;
+	}
+}
+
+.rootPlaceQuestions {
+	color: #0c5b5d;
+}
+
+.rootPlacePracticeActivity {
+	max-width: 872px;
+	margin: 25px auto 40px;
+	font-weight: 600;
+	padding-right: 4px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 20px;
+		margin-bottom: 41px;
+		padding-right: 3px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-right: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.rootPlaceHowItWillGo {
+	@media screen and (max-width: 986px) {
+		margin-top: 15px;
+	}
+}
+
+.rootTypeTextAlignLeft {
+	text-align: left;
+}
+
+.rootPlaceAboutAuthor {
+	font-size: 20px;
+	line-height: 1.5;
+	color: #2b3541;
+	margin: 20px 0 0;
+	letter-spacing: normal;
+
+	@media screen and (max-width: 986px) {
+		max-width: 374px;
+		font-size: 16px;
+		margin-top: 0;
+		position: relative;
+		z-index: 1;
+	}
+
+	@media screen and (max-width: 531px) {
+		line-height: 1.43;
+		letter-spacing: -0.32px;
+	}
+}
+
+.rootPlaceFeedback {
+	margin-top: 0;
+	font-size: 22px;
+	line-height: 1.45;
+	letter-spacing: normal;
+
+	@media screen and (max-width: 986px) {
+		font-size: 16px;
+		line-height: 1.18;
+		letter-spacing: -0.32px;
+		margin-top: 5px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 14px;
+		line-height: 1.5;
+		letter-spacing: -0.28px;
+		margin-top: 6px;
+		margin-inline: auto;
+	}
+}
+
+.spanNoWrap {
+	white-space: nowrap;
+}

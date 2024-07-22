@@ -1,0 +1,29 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	margin-right: 32px;
+	margin-left: auto;
+
+	@media screen and (max-width: 884px) {
+		display: none;
+	}
+}
+
+.list {
+	display: flex;
+	gap: 24px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menuLink {
+	@include main-text-font(14, 500, 1.7, #667085);
+	display: inline-block;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+
+	&:hover {
+		color: #045c5e;
+	}
+}

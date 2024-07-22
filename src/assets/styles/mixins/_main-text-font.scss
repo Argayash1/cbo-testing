@@ -1,0 +1,14 @@
+@mixin main-text-font($size, $weight, $line-height: normal, $color: #000) {
+	font-weight: $weight;
+	font-size: $size + px;
+	font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+	font-style: normal;
+
+	@if $line-height {
+		line-height: $line-height;
+	}
+
+	@if $color {
+		color: $color;
+	}
+}

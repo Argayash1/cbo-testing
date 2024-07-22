@@ -1,0 +1,101 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	position: absolute;
+	bottom: 30px;
+	right: 182px;
+	width: 379.54px;
+	height: 206px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 39px 14px 22px 14px;
+
+	@media screen and (max-width: 1296px) {
+		right: 169px;
+	}
+
+	@media screen and (max-width: 1223px) {
+		right: 131px;
+	}
+
+	@media screen and (max-width: 986px) {
+		width: 328px;
+		height: 236px;
+		padding: 30px 22px 29px 25px;
+		bottom: 103px;
+		right: initial;
+		left: -184px;
+	}
+	@media screen and (max-width: 720px) {
+		bottom: 20px;
+		left: 20px;
+		padding: 20px;
+		width: 278px;
+		height: 200px;
+	}
+
+	@media screen and (max-width: 531px) {
+		width: 250px;
+		height: 141px;
+		padding: 15px;
+		bottom: 26px;
+		left: 26px;
+	}
+}
+
+.speakerName {
+	@include main-text-font(29, 600, 1.2, #004241);
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.58px;
+
+	@media screen and (max-width: 720px) {
+		font-size: 22px;
+		letter-spacing: -0.44px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 18px;
+		line-height: 1.16;
+		letter-spacing: -0.36px;
+	}
+}
+
+.speakerTitle {
+	@include main-text-font(15, 500, 1.6, #2b3541);
+
+	margin: 9px 0 10px 0;
+	padding: 0;
+	letter-spacing: -0.3px;
+
+	@media screen and (max-width: 986px) {
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+
+	@media screen and (max-width: 720px) {
+		margin-top: 12px;
+		margin-bottom: 16px;
+		font-size: 14px;
+		letter-spacing: -0.28px;
+	}
+
+	@media screen and (max-width: 531px) {
+		margin-top: 8px;
+		margin-bottom: 10px;
+		font-size: 12px;
+		line-height: 1.41;
+		letter-spacing: -0.24px;
+	}
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (max-width: 531px) {
+		justify-content: flex-start;
+		gap: 20px;
+	}
+}

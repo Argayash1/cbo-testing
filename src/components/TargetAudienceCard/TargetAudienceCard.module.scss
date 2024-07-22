@@ -1,0 +1,96 @@
+@import '../../assets/styles/mixins/_main-text-font.scss';
+
+.root {
+	max-width: 368px;
+	min-height: 158px;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-top: 31px;
+
+	@media screen and (max-width: 986px) {
+		max-width: none;
+		min-height: 108px;
+	}
+
+	@media screen and (max-width: 531px) {
+		padding-left: 24px;
+		padding-top: 30px;
+	}
+}
+
+.number {
+	@include main-text-font(115, 500, 0.86, #0c999c);
+	position: absolute;
+	top: 2px;
+	left: 0;
+	z-index: 0;
+	opacity: 0.5;
+	letter-spacing: -2.3px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 100px;
+		line-height: 1;
+		letter-spacing: -2px;
+		top: 1px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 80px;
+		line-height: 1;
+		letter-spacing: -1.6px;
+		top: 1px;
+	}
+}
+
+.title {
+	@include main-text-font(24, 600, 1.45, #fff);
+	position: relative;
+	z-index: 1;
+	margin: 0 0 15px;
+	padding: 0;
+	letter-spacing: -0.48px;
+	min-height: 35px;
+
+	@media screen and (max-width: 986px) {
+		font-size: 21px;
+		line-height: 1;
+		letter-spacing: -0.42px;
+		min-height: 21px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 18px;
+		line-height: 1.38;
+		letter-spacing: -0.36px;
+		min-height: 25px;
+		margin-bottom: 10px;
+	}
+}
+
+.titleTypeFirst {
+	@media screen and (max-width: 986px) {
+		margin-bottom: 10px;
+	}
+}
+
+.description {
+	@include main-text-font(16, 400, 1.56, #fff);
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -0.32px;
+	opacity: 0.8;
+	min-height: 25px;
+
+	@media screen and (max-width: 986px) {
+		min-height: 50px;
+	}
+
+	@media screen and (max-width: 531px) {
+		font-size: 15px;
+		line-height: 1.46;
+		letter-spacing: -0.3px;
+	}
+}
