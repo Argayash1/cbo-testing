@@ -4,6 +4,7 @@
 .root {
   width: 100%;
   background-color: #ffffff;
+  position: relative;
 }
 
 .container {
@@ -58,4 +59,13 @@
   @media screen and (max-width: 884px) {
     display: none;
   }
+}
+
+.screenWidth {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 20px;
+  border: 1px solid red;
+  color: red;
 }

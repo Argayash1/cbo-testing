@@ -1,10 +1,15 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import { BurgerButton, CTA, Logo, MainMenu, TopMenu } from '../../components';
+import useResize from '../../hooks/useResize';
 
 export const Header = () => {
+  const screenWidth = useResize();
+
   return (
     <header className={styles.root}>
+      <p className={styles.screenWidth}>{screenWidth}</p>
+
       <div className={styles.container}>
         <Logo />
         <TopMenu />
