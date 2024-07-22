@@ -1,134 +1,134 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	background-color: rgba(12, 153, 156, 0.1);
-	padding-bottom: 18px;
-	box-sizing: border-box;
-	border-radius: 5px;
+  background-color: rgba(12, 153, 156, 0.1);
+  padding-bottom: 18px;
+  box-sizing: border-box;
+  border-radius: 5px;
 
-	@media screen and (max-width: 986px) {
-		padding-bottom: 15px;
-	}
+  @media screen and (max-width: 986px) {
+    padding-bottom: 15px;
+  }
 
-	@media screen and (max-width: 986px) {
-		padding-bottom: 16px;
-	}
+  @media screen and (max-width: 986px) {
+    padding-bottom: 16px;
+  }
 }
 
 .questionButton {
-	@include main-text-font(24, 600, 1.45, #2b3541);
+  @include main-text-font(24, 600, 1.45, #2b3541);
 
-	background-color: transparent;
-	width: 100%;
-	border: none;
-	text-align: left;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	gap: 25px;
-	justify-content: space-between;
-	align-items: center;
-	letter-spacing: -0.48px;
-	padding: 17px 30px 0 35px;
-	box-sizing: border-box;
-	transition: padding 0.3s ease-in-out;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: -0.48px;
+  padding: 17px 30px 0 35px;
+  box-sizing: border-box;
+  transition: padding 0.3s ease-in-out;
 
-	@media screen and (max-width: 986px) {
-		font-size: 18px;
-		line-height: 1.44;
-		letter-spacing: normal;
-		padding: 15px 22px 0 22px;
-	}
+  @media screen and (max-width: 986px) {
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: normal;
+    padding: 15px 22px 0 22px;
+  }
 
-	@media screen and (max-width: 531px) {
-		padding-top: 16px;
-		padding-right: 10px;
-		padding-left: 15px;
-		font-size: 16px;
-		line-height: 1.43;
-		letter-spacing: -0.32px;
-		gap: 21px;
-	}
+  @media screen and (max-width: 531px) {
+    padding-top: 16px;
+    padding-right: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 1.43;
+    letter-spacing: -0.32px;
+    gap: 21px;
+  }
 }
 
 .questionButtonOpenInTablet {
-	padding-top: 7px;
+  padding-top: 7px;
 }
 
 .questionButtonTypeSecond {
-	@media screen and (max-width: 531px) {
-		padding-top: 17px;
-	}
+  @media screen and (max-width: 531px) {
+    padding-top: 17px;
+  }
 }
 
 .question {
-	transition: margin-top 0.3s ease-in-out;
+  transition: margin-top 0.3s ease-in-out;
 }
 
 .questionOpenInTablet {
-	margin-top: 15px;
+  margin-top: 15px;
 
-	@media screen and (max-width: 531px) {
-		margin-top: 9px;
-	}
+  @media screen and (max-width: 531px) {
+    margin-top: 9px;
+  }
 }
 
 .buttonIcon {
-	background-color: #fff;
-	background-image: url('../../assets/images/faq-accordion-button-icon.svg');
-	background-repeat: no-repeat;
-	background-size: 18px 18px;
-	background-position: center;
-	border-radius: 50%;
-	width: 45px;
-	height: 45px;
-	display: inline-block;
-	transition: transform 0.3s linear;
-	flex-shrink: 0;
+  background-color: #fff;
+  background-image: url('../../assets/images/faq-accordion-button-icon.svg');
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  transition: transform 0.3s linear;
+  flex-shrink: 0;
 
-	@media screen and (max-width: 986px) {
-		width: 40px;
-		height: 40px;
-		background-size: 16px 16px;
-	}
+  @media screen and (max-width: 986px) {
+    width: 40px;
+    height: 40px;
+    background-size: 16px 16px;
+  }
 
-	@media screen and (max-width: 531px) {
-		margin-top: 4px;
-		background-position: 11.5px 11.4px;
-	}
+  @media screen and (max-width: 531px) {
+    margin-top: 4px;
+    background-position: 11.5px 11.4px;
+  }
 }
 
 .buttonIconRotated {
-	transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .accordionCollapse {
-	overflow: hidden;
-	transition: height 0.5s ease;
+  overflow: hidden;
+  transition: height 0.5s ease;
 }
 
 .answer {
-	@include main-text-font(16, 400, 1.5, #2b3541);
+  @include main-text-font(16, 400, 1.5, #2b3541);
 
-	letter-spacing: -0.32px;
-	margin: 0;
-	padding: 20px 0 5px;
-	max-width: 851px;
-	padding-left: 35px;
+  letter-spacing: -0.32px;
+  margin: 0;
+  padding: 20px 0 5px;
+  max-width: 851px;
+  padding-left: 35px;
 
-	@media screen and (max-width: 986px) {
-		max-width: 80.3%;
-		font-size: 14px;
-		line-height: 1.5;
-		letter-spacing: -0.28px;
-		padding-left: 22px;
-		padding-bottom: 8px;
-	}
+  @media screen and (max-width: 986px) {
+    max-width: 80.3%;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.28px;
+    padding-left: 22px;
+    padding-bottom: 8px;
+  }
 
-	@media screen and (max-width: 531px) {
-		padding-left: 15px;
-		padding-top: 26px;
-		padding-right: 10px;
-		max-width: 100%;
-	}
+  @media screen and (max-width: 531px) {
+    padding-left: 15px;
+    padding-top: 26px;
+    padding-right: 10px;
+    max-width: 100%;
+  }
 }

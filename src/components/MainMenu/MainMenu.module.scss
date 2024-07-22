@@ -1,39 +1,39 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .list {
-	display: flex;
-	gap: 16px;
-	margin: 0;
-	padding: 0;
-	color: #ffffffff;
-	list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  color: #ffffffff;
+  list-style: none;
 }
 
 .menuItem {
-	height: 24px;
+  height: 24px;
 }
 
 .navLink {
-	@include main-text-font(14, 500, 1.71, #fff);
-	text-decoration: none;
-	display: inline-block;
-	transition: opacity 0.3s ease-in-out;
+  @include main-text-font(14, 500, 1.71, #fff);
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.3s ease-in-out;
 
-	&:hover {
-		opacity: 0.8;
-	}
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .navLinkTypeFirst {
-	display: flex;
+  display: flex;
 }
 
 .arrowIcon {
-	width: 24px;
-	min-height: 24px;
-	display: inline-block;
-	background-image: url('../../assets/images/main-menu-arrow-icon.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	margin: 0 0 0 2px;
+  width: 24px;
+  min-height: 24px;
+  display: inline-block;
+  background-image: url('../../assets/images/main-menu-arrow-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 0 0 2px;
 }

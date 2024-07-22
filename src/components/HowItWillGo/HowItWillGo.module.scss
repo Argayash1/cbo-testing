@@ -2,87 +2,87 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 .container {
-	@include section-flex-container(0, 0, 91);
+  @include section-flex-container(0, 0, 91);
 
-	@media screen and (max-width: 1006px) {
-		padding-bottom: 82px;
-	}
+  @media screen and (max-width: 1006px) {
+    padding-bottom: 82px;
+  }
 
-	@media screen and (max-width: 560px) {
-		padding-bottom: 70px;
-	}
+  @media screen and (max-width: 560px) {
+    padding-bottom: 70px;
+  }
 }
 
 .photoList {
-	list-style: none;
-	display: flex;
-	gap: 35px;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	left: 50%;
-	transition: transform 0.3s ease-in-out;
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transition: transform 0.3s ease-in-out;
 
-	@media screen and (max-width: 986px) {
-		gap: 30px;
-	}
+  @media screen and (max-width: 986px) {
+    gap: 30px;
+  }
 
-	@media screen and (max-width: 531px) {
-		gap: 15px;
-	}
+  @media screen and (max-width: 531px) {
+    gap: 15px;
+  }
 }
 
 .photoListItem {
-	position: relative;
+  position: relative;
 }
 
 .photo {
-	width: 672px;
-	height: 401px;
-	object-fit: cover;
-	border-radius: 15px;
+  width: 672px;
+  height: 401px;
+  object-fit: cover;
+  border-radius: 15px;
 
-	@media screen and (max-width: 986px) {
-		width: 477px;
-		height: 284px;
-	}
+  @media screen and (max-width: 986px) {
+    width: 477px;
+    height: 284px;
+  }
 
-	@media screen and (max-width: 531px) {
-		width: 270px;
-		height: 295px;
-	}
+  @media screen and (max-width: 531px) {
+    width: 270px;
+    height: 295px;
+  }
 }
 
 .textOnPhoto {
-	@include main-text-font(20, 500, 1.5, #fff);
+  @include main-text-font(20, 500, 1.5, #fff);
 
-	position: absolute;
-	bottom: 33px;
-	left: 50px;
-	max-width: 571px;
-	text-align: center;
-	margin: 0;
-	padding: 0;
+  position: absolute;
+  bottom: 33px;
+  left: 50px;
+  max-width: 571px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 
-	@media screen and (max-width: 986px) {
-		font-size: 18px;
-		line-height: 1.38;
-		left: 26px;
-		bottom: 28px;
-		max-width: 427px;
-	}
+  @media screen and (max-width: 986px) {
+    font-size: 18px;
+    line-height: 1.38;
+    left: 26px;
+    bottom: 28px;
+    max-width: 427px;
+  }
 
-	@media screen and (max-width: 531px) {
-		font-size: 16px;
-		line-height: 1.43;
-		letter-spacing: -0.32px;
-		font-weight: 600;
-		max-width: 240px;
-		bottom: 24px;
-		left: 15px;
-	}
+  @media screen and (max-width: 531px) {
+    font-size: 16px;
+    line-height: 1.43;
+    letter-spacing: -0.32px;
+    font-weight: 600;
+    max-width: 240px;
+    bottom: 24px;
+    left: 15px;
+  }
 }

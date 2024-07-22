@@ -2,140 +2,140 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	background-image: linear-gradient(90deg, #004241, #045c5e);
-	border-radius: 30px;
+  background-image: linear-gradient(90deg, #004241, #045c5e);
+  border-radius: 30px;
 
-	@media screen and (max-width: 986px) {
-		box-sizing: border-box;
-		padding-left: 31px;
-		padding-right: 30px;
-		background-color: #fff;
-		background-image: none;
-		border-radius: 0;
-	}
+  @media screen and (max-width: 986px) {
+    box-sizing: border-box;
+    padding-left: 31px;
+    padding-right: 30px;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 0;
+  }
 
-	@media screen and (max-width: 531px) {
-		padding-left: 0;
-		padding-right: 0;
-	}
+  @media screen and (max-width: 531px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .container {
-	@include section-flex-container(75, 120, 75);
-	min-height: 594px;
-	font-size: 0;
-	position: relative;
-	overflow: hidden;
+  @include section-flex-container(75, 120, 75);
+  min-height: 594px;
+  font-size: 0;
+  position: relative;
+  overflow: hidden;
 
-	&::after {
-		content: '';
-		width: 595px;
-		height: 562px;
-		background-image: url('../../assets/images/target-audience-background.svg');
-		position: absolute;
-		bottom: -64px;
-		right: -367px;
+  &::after {
+    content: '';
+    width: 595px;
+    height: 562px;
+    background-image: url('../../assets/images/target-audience-background.svg');
+    position: absolute;
+    bottom: -64px;
+    right: -367px;
 
-		@media screen and (max-width: 986px) {
-			display: none;
-		}
-	}
+    @media screen and (max-width: 986px) {
+      display: none;
+    }
+  }
 
-	@media screen and (max-width: 1360px) {
-		padding-inline: 70px;
-	}
+  @media screen and (max-width: 1360px) {
+    padding-inline: 70px;
+  }
 
-	@media screen and (max-width: 1243px) {
-		padding-inline: 50px;
-	}
+  @media screen and (max-width: 1243px) {
+    padding-inline: 50px;
+  }
 
-	@media screen and (max-width: 1006px) {
-		padding: 50px 40px;
-		border-radius: 15px;
-	}
+  @media screen and (max-width: 1006px) {
+    padding: 50px 40px;
+    border-radius: 15px;
+  }
 
-	@media screen and (max-width: 986px) {
-		background-image: linear-gradient(90deg, #005958, #0c999c);
-		border-radius: 15px;
-	}
+  @media screen and (max-width: 986px) {
+    background-image: linear-gradient(90deg, #005958, #0c999c);
+    border-radius: 15px;
+  }
 
-	@media screen and (max-width: 560px) {
-		padding: 40px 20px 40px 16px;
-	}
+  @media screen and (max-width: 560px) {
+    padding: 40px 20px 40px 16px;
+  }
 }
 
 .list {
-	list-style: none;
-	display: flex;
-	gap: 48px;
-	margin: 40px 0 0;
-	padding: 0;
-	font-size: 0;
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  margin: 40px 0 0;
+  padding: 0;
+  font-size: 0;
 
-	@media screen and (max-width: 986px) {
-		flex-direction: column;
-		gap: 30px;
-		margin-top: 20px;
-	}
+  @media screen and (max-width: 986px) {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
 
-	@media screen and (max-width: 531px) {
-		margin-top: 15px;
-	}
+  @media screen and (max-width: 531px) {
+    margin-top: 16px;
+  }
 }
 
 .warningContainer {
-	display: flex;
-	justify-content: center;
-	gap: 17px;
-	margin: 50px 0 48px;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin: 50px 0 48px;
 
-	@media screen and (max-width: 986px) {
-		margin-top: 40px;
-		margin-bottom: 40px;
-		gap: 15px;
-	}
+  @media screen and (max-width: 986px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 15px;
+  }
 
-	@media screen and (max-width: 531px) {
-		margin-top: 30px;
-		margin-bottom: 31px;
-		margin-left: 4px;
-	}
+  @media screen and (max-width: 531px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 4px;
+  }
 }
 
 .warningIcon {
-	width: 33px;
-	height: 30px;
-	background-image: url('../../assets/images/target-audience-warning-icon.svg');
-	background-size: contain;
-	flex-shrink: 0;
+  width: 33px;
+  height: 30px;
+  background-image: url('../../assets/images/target-audience-warning-icon.svg');
+  background-size: contain;
+  flex-shrink: 0;
 
-	@media screen and (max-width: 986px) {
-		width: 28px;
-		height: 25px;
-		margin-top: 5px;
-	}
+  @media screen and (max-width: 986px) {
+    width: 28px;
+    height: 25px;
+    margin-top: 5px;
+  }
 
-	@media screen and (max-width: 531px) {
-		width: 27px;
-	}
+  @media screen and (max-width: 531px) {
+    width: 27px;
+  }
 }
 
 .warning {
-	@include main-text-font(24, 600, 1.45, #fff);
-	margin: 0;
-	padding: 0;
-	letter-spacing: -0.48px;
-	min-height: 35px;
+  @include main-text-font(24, 600, 1.45, #fff);
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.48px;
+  min-height: 35px;
 
-	@media screen and (max-width: 986px) {
-		font-size: 21px;
-		line-height: 1.42;
-		letter-spacing: -0.42px;
-	}
+  @media screen and (max-width: 986px) {
+    font-size: 21px;
+    line-height: 1.42;
+    letter-spacing: -0.42px;
+  }
 
-	@media screen and (max-width: 531px) {
-		font-size: 18px;
-		line-height: 1.38;
-		letter-spacing: -0.36px;
-	}
+  @media screen and (max-width: 531px) {
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: -0.36px;
+  }
 }

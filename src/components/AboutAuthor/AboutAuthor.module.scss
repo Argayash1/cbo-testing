@@ -2,193 +2,193 @@
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
-	background-color: rgba(12, 153, 156, 0.1);
-	border-radius: 30px;
+  background-color: rgba(12, 153, 156, 0.1);
+  border-radius: 30px;
 }
 
 .container {
-	@include section-flex-container(57, 0, 0, 120);
+  @include section-flex-container(57, 0, 0, 120);
 
-	display: grid;
-	grid-template-columns: minmax(200px, 681px) minmax(200px, 623px);
-	grid-template-rows: min-content 57px minmax(173px, max-content) 35px minmax(
-			501px,
-			max-content
-		);
+  display: grid;
+  grid-template-columns: minmax(200px, 681px) minmax(200px, 623px);
+  grid-template-rows: min-content 57px minmax(173px, max-content) 35px minmax(501px, max-content);
 
-	gap: 10px 16px;
-	background-image: url('../../assets/images/about-author-background.png');
-	background-repeat: no-repeat;
-	background-position: top right;
-	overflow: hidden;
-	position: relative;
+  gap: 10px 16px;
+  background-image: url('../../assets/images/about-author-background.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  overflow: hidden;
+  position: relative;
 
-	@media screen and (max-width: 1360px) {
-		padding-left: 70px;
-	}
+  @media screen and (max-width: 1360px) {
+    padding-left: 70px;
+  }
 
-	@media screen and (max-width: 1243px) {
-		padding-left: 50px;
-		grid-template-rows: min-content 57px minmax(173px, max-content) 35px minmax(
-				567px,
-				max-content
-			);
-	}
+  @media screen and (max-width: 1243px) {
+    padding-left: 50px;
+    grid-template-rows: min-content 57px minmax(173px, max-content) 35px minmax(567px, max-content);
+  }
 
-	@media screen and (max-width: 1006px) {
-		padding-top: 48px;
-		padding-left: 30px;
-	}
+  @media screen and (max-width: 1006px) {
+    padding-top: 48px;
+    padding-left: 30px;
+  }
 
-	@media screen and (max-width: 986px) {
-		display: flex;
-		flex-direction: column;
-		gap: 0;
-		padding-top: 0;
-		border-radius: 15px;
-		background-position: 117px -66px;
-	}
+  @media screen and (max-width: 986px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 0;
+    border-radius: 15px;
+    background-position: 117px -66px;
+  }
 
-	@media screen and (max-width: 560px) {
-		padding-inline: 20px;
-	}
+  @media screen and (max-width: 560px) {
+    padding-inline: 20px;
+  }
 }
 
 .presentation {
-	@include main-text-font(20, 500, 1.5, #0c5b5d);
-	max-width: 521px;
-	margin: 23px 0 0;
-	padding: 0;
+  @include main-text-font(20, 500, 1.5, #0c5b5d);
+  max-width: 521px;
+  margin: 23px 0 0;
+  padding: 0;
 
-	@media screen and (max-width: 986px) {
-		max-width: 374px;
-		font-size: 14px;
-		line-height: 1.42;
-		letter-spacing: -0.28px;
-		margin-top: 48px;
-		position: relative;
-		z-index: 1;
-	}
+  @media screen and (max-width: 986px) {
+    max-width: 374px;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: -0.28px;
+    margin-top: 48px;
+    position: relative;
+    z-index: 1;
+  }
 
-	@media screen and (max-width: 531px) {
-		margin-top: 40px;
-		font-size: 13px;
-		line-height: 1.53;
-		font-weight: 400;
-		letter-spacing: -0.26px;
-	}
+  @media screen and (max-width: 531px) {
+    margin-top: 40px;
+    font-size: 13px;
+    line-height: 1.53;
+    font-weight: 400;
+    letter-spacing: -0.26px;
+  }
 }
 
 .competenciesListTitle {
-	@include main-text-font(24, 600, 1.45, #2b3541);
-	margin: 0;
-	padding: 0;
-	letter-spacing: -0.48px;
+  @include main-text-font(24, 600, 1.45, #2b3541);
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.48px;
 
-	@media screen and (max-width: 986px) {
-		margin-top: 36px;
-		margin-bottom: 17px;
-		font-size: 18px;
-		line-height: 1.44;
-		letter-spacing: normal;
-	}
+  @media screen and (max-width: 986px) {
+    margin-top: 36px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: normal;
+  }
 
-	@media screen and (max-width: 531px) {
-		font-size: 18px;
-		line-height: 1.38;
-		letter-spacing: -0.36px;
-		margin-top: 31px;
-		margin-bottom: 15px;
-	}
+  @media screen and (max-width: 531px) {
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: -0.36px;
+    margin-top: 31px;
+    margin-bottom: 15px;
+  }
 }
 
 .competencies {
-	@include main-text-font(18, 400, 1.5, #2b3541);
+  @include main-text-font(18, 400, 1.5, #2b3541);
 
-	margin: 15px 0 0 17px;
-	padding: 0 0 20px;
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+  margin: 15px 0 0 17px;
+  padding: 0 0 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
-	@media screen and (max-width: 986px) {
-		gap: 20px;
-		max-width: 397px;
-		font-size: 16px;
-		padding-bottom: 50px;
-		margin-top: 0;
-		position: relative;
-		z-index: 1;
-	}
-	@media screen and (max-width: 531px) {
-		padding-bottom: 0;
-		margin-bottom: 25px;
-		font-size: 14px;
-		letter-spacing: -0.28px;
-		gap: 15px;
-	}
+  @media screen and (max-width: 986px) {
+    gap: 20px;
+    max-width: 397px;
+    font-size: 16px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+  }
+  @media screen and (max-width: 531px) {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    gap: 15px;
+  }
 }
 
 .competence {
-	position: relative;
+  position: relative;
 
-	&::before {
-		content: '';
-		width: 7px;
-		height: 7px;
-		background-color: #0c999c;
-		transform: rotate(45deg);
-		display: inline-block;
-		position: absolute;
-		top: 10px;
-		left: -17px;
-	}
+  &::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #0c999c;
+    transform: rotate(45deg);
+    display: inline-block;
+    position: absolute;
+    top: 10px;
 
-	@media screen and (max-width: 986px) {
-		&:nth-child(3) {
-			max-width: 343px;
-		}
+    @media screen and (max-width: 986px) {
+      transform: rotate(0);
+      border-radius: 50%;
+      top: 9px;
+      left: -17px;
+    }
+  }
 
-		&:nth-child(4) {
-			max-width: 357px;
-		}
+  @media screen and (max-width: 986px) {
+    &:nth-child(3) {
+      max-width: 343px;
+    }
 
-		&:last-child {
-			max-width: 395px;
-		}
-	}
+    &:nth-child(4) {
+      max-width: 357px;
+    }
+
+    &:last-child {
+      max-width: 395px;
+    }
+  }
 }
 
 .authorPhoto {
-	width: 780px;
-	height: 888px;
-	object-fit: contain;
-	object-position: top left;
-	grid-row: 1/6;
-	grid-column: 2/3;
-	align-self: flex-end;
-	margin-bottom: 1px;
+  width: 780px;
+  height: 888px;
+  object-fit: contain;
+  object-position: top left;
+  grid-row: 1/6;
+  grid-column: 2/3;
+  align-self: flex-end;
+  margin-bottom: 1px;
 
-	@media screen and (max-width: 1243px) {
-		width: 839.25px;
-		height: 953.4px;
-	}
+  @media screen and (max-width: 1243px) {
+    width: 839.25px;
+    height: 953.4px;
+  }
 
-	@media screen and (max-width: 986px) {
-		position: absolute;
-		top: -1px;
-		right: 0;
-		width: 493px;
-		height: 1050px;
-		z-index: 0;
-	}
+  @media screen and (max-width: 986px) {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 493px;
+    height: 1050px;
+    z-index: 0;
+  }
 
-	@media screen and (max-width: 531px) {
-		width: 406px;
-		height: 463px;
-		position: relative;
-		top: 19px;
-		left: 49px;
-	}
+  @media screen and (max-width: 531px) {
+    width: 406px;
+    height: 463px;
+    position: relative;
+    top: 19px;
+    left: 49px;
+  }
 }
