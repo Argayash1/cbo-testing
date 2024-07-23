@@ -3,15 +3,15 @@ html {
 }
 
 .page {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #fff;
+  color: #000;
   font-weight: 400;
   font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
   text-rendering: optimizelegibility;
 }
 
 .content {
-  min-width: 375px;
+  min-width: 320px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
