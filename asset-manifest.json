@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cbo-testing/static/css/main.0ff11cb7.css",
+    "main.css": "/cbo-testing/static/css/main.9c4aa10e.css",
     "main.js": "/cbo-testing/static/js/main.9434d5e9.js",
     "static/js/453.3bba4e7a.chunk.js": "/cbo-testing/static/js/453.3bba4e7a.chunk.js",
     "static/media/about-author-photo.png": "/cbo-testing/static/media/about-author-photo.3acc7dbeb71d6dd98ab2.png",
@@ -45,12 +45,12 @@
     "static/media/practice-activiti-list-icon.svg": "/cbo-testing/static/media/practice-activiti-list-icon.934c167cc2f000eac325.svg",
     "static/media/main-menu-arrow-icon.svg": "/cbo-testing/static/media/main-menu-arrow-icon.4a292ec3c7682471ad53.svg",
     "static/media/faq-accordion-button-icon.svg": "/cbo-testing/static/media/faq-accordion-button-icon.aabb8f325bc3fc73b464.svg",
-    "main.0ff11cb7.css.map": "/cbo-testing/static/css/main.0ff11cb7.css.map",
+    "main.9c4aa10e.css.map": "/cbo-testing/static/css/main.9c4aa10e.css.map",
     "main.9434d5e9.js.map": "/cbo-testing/static/js/main.9434d5e9.js.map",
     "453.3bba4e7a.chunk.js.map": "/cbo-testing/static/js/453.3bba4e7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff11cb7.css",
+    "static/css/main.9c4aa10e.css",
     "static/js/main.9434d5e9.js"
   ]
 }
