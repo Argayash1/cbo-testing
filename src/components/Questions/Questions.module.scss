@@ -1,20 +1,18 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 
 .root {
   background-color: #fff;
 }
 
 .container {
-  @include section-flex-container(96, 120, 96);
+  @include section-container(96, 120, 96);
 
   @media screen and (max-width: 1360px) {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-inline: 70px;
   }
 
   @media screen and (max-width: 1243px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-inline: 50px;
   }
 
   @media screen and (max-width: 1006px) {

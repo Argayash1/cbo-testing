@@ -1,4 +1,4 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
@@ -9,30 +9,26 @@
 .container {
   position: relative;
 
-  @include section-flex-container(0, 120, 0);
+  @include section-container(0, 120, 0);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 1360px) {
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-inline: 70px;
   }
 
   @media screen and (max-width: 1243px) {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-inline: 50px;
   }
 
   @media screen and (max-width: 1006px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-inline: 30px;
   }
 
   @media screen and (max-width: 560px) {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-inline: 20px;
     min-height: 50px;
   }
 }
@@ -60,15 +56,4 @@
   @media screen and (max-width: 884px) {
     display: none;
   }
-}
-
-.screenWidth {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  font-size: 20px;
-  border: 1px solid red;
-  color: red;
-  margin: 0;
-  padding: 0;
 }

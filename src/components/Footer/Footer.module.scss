@@ -1,4 +1,4 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
@@ -6,7 +6,7 @@
 }
 
 .container {
-  @include section-flex-container(32, 112, 32);
+  @include section-container(32, 112, 32);
 
   @media screen and (max-width: 1360px) {
     padding-inline: 70px;

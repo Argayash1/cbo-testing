@@ -1,7 +1,6 @@
-@mixin section-flex-container($top, $right, $bottom, $left: null) {
+@mixin section-container($top, $right, $bottom, $left: null) {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1440px;
+  width: min(100%, 1440px);
   margin: 0 auto;
   padding: $top + px $right + px $bottom + px;
 

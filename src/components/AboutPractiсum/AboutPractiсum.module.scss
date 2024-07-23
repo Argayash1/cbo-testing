@@ -1,7 +1,7 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 
 .container {
-  @include section-flex-container(96, 0, 94, 90);
+  @include section-container(96, 0, 94, 90);
 
   @media screen and (max-width: 1360px) {
     padding-left: 70px;

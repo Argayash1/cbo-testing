@@ -1,4 +1,4 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
@@ -6,7 +6,7 @@
 }
 
 .container {
-  @include section-flex-container(0, 0, 0, 120);
+  @include section-container(0, 0, 0, 120);
 
   display: grid;
   grid-template-columns: 1fr auto;

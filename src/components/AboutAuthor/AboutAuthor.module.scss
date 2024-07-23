@@ -1,4 +1,4 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
@@ -7,7 +7,7 @@
 }
 
 .container {
-  @include section-flex-container(57, 0, 0, 120);
+  @include section-container(57, 0, 0, 120);
 
   display: grid;
   grid-template-columns: minmax(200px, 681px) minmax(200px, 623px);

@@ -1,11 +1,12 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 
 .root {
   background-color: #fff;
 }
 
 .container {
-  @include section-flex-container(0, 120, 86);
+  @include section-container(0, 120, 86);
+
   display: grid;
   grid-template-columns: 1fr 315px;
   gap: 10px 15px;

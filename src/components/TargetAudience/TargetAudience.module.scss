@@ -1,4 +1,4 @@
-@import '../../assets/styles/mixins/section-flex-container';
+@import '../../assets/styles/mixins/section-container';
 @import '../../assets/styles/mixins/_main-text-font.scss';
 
 .root {
@@ -21,7 +21,8 @@
 }
 
 .container {
-  @include section-flex-container(75, 120, 75);
+  @include section-container(75, 120, 75);
+
   min-height: 594px;
   font-size: 0;
   position: relative;

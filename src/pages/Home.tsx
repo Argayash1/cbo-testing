@@ -5,8 +5,8 @@ export const Home = () => {
   return (
     <div>
       <Header />
-      {/* <Main />
-			<Footer /> */}
+      <Main />
+      <Footer />
     </div>
   );
 };
