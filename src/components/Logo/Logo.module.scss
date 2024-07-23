@@ -12,6 +12,8 @@
   height: 48px;
   padding-top: 24px;
   padding-bottom: 24px;
+  object-fit: contain;
+  object-position: center;
 
   @media screen and (max-width: 884px) {
     width: 128.11px;

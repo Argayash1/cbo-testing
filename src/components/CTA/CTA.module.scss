@@ -108,8 +108,10 @@
   width: 220px;
   padding-left: 29.73px;
   padding-right: 22.65px;
+  margin-top: 1px;
 
   @media screen and (max-width: 986px) {
+    margin-top: 0;
     margin-left: 1px;
   }
 
