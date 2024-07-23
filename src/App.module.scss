@@ -1,14 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
-	color: #000000;
-	font-weight: 400;
-	font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-	background-color: #ffffff;
-	text-rendering: optimizelegibility;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  text-rendering: optimizelegibility;
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
-	min-width: 375px;
-	min-height: 100vh;
+  min-width: 375px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
